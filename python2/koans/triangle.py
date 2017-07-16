@@ -19,8 +19,15 @@
 #
 def triangle(a, b, c):
     # DELETE 'PASS' AND WRITE THIS CODE
-    pass
+    # result = len(set([a, b, c]))
+    # if result == 1: return 'equilateral'
+    # if result == 2: return 'isosceles'
+    # if result == 3: return 'scalene'
 
+    # lengths_of_sides = len(set([a, b, c]))
+    
+    type_dict = {1: 'equilateral', 2: 'isosceles', 3: 'scalene'}
+    return type_dict[len(set([a, b, c]))]
 
 # Error class used in part 2.  No need to change this code.
 class TriangleError(StandardError):
