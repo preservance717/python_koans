@@ -35,7 +35,17 @@ from runner.koan import *
 
 def score(dice):
     # You need to write this method
-    pass
+    if len(dice) == 0: return 0
+
+    dice_dict = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}
+
+    for i in dice:
+        dice_dict[i] += 1
+
+    
+    
+    return dice_dict
+    
 
 
 class AboutScoringProject(Koan):
