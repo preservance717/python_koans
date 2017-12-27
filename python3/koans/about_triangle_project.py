@@ -21,3 +21,4 @@ class AboutTriangleProject(Koan):
         self.assertEqual('scalene', triangle(3, 4, 5))
         self.assertEqual('scalene', triangle(10, 11, 12))
         self.assertEqual('scalene', triangle(5, 4, 2))
+    
